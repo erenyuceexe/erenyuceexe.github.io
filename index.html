@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#100b17">
+    <meta name="description" content="Eren Yüce'nin canlı ve yakında gelecek GitHub Pages projeleri.">
+    <meta property="og:title" content="Eren Yüce — Proje dizini">
+    <meta property="og:description" content="Üretim alanları, araçlar ve deneyler tek bir yerde.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <title>Eren Yüce / Proje dizini</title>
+  </head>
+  <body>
+    <!--
+      THESIS: Bu sayfa bir özgeçmiş değil, canlı projelere açılan bir kontrol masasıdır.
+      OWN-WORLD: Plum zemin, elektrik moru, fuşya ve lime; ince çizgiler, indeks dili ve CSS ile üretilmiş ışık formları.
+      STORY: Ziyaretçi üretimin haritasını görür, bir projeyi seçer ve sonraki durağına geçer.
+      FIRST VIEWPORT: Sol üstte marka, sağda durum göstergesi; merkezde büyük “Üretim burada başlıyor” başlığı ve dizine çağrı.
+      FORM: Editoryal kontrol masası; standart portföy ızgarası yerine açık bir proje manifestosu ve tek güçlü aksiyon.
+    -->
+    <a class="skip-link" href="#projeler">İçeriğe geç</a>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Eren Yüce ana sayfa">
+        <span class="brand-mark" aria-hidden="true">EY</span>
+        <span>erenyuceexe<span class="brand-dot">.</span>github<span class="brand-dot">.</span>io</span>
+      </a>
+      <div class="header-status" aria-label="Site durumu">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span>YAYINDA</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit--one" aria-hidden="true"></div>
+        <div class="hero-orbit hero-orbit--two" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="hero-index">/ 00 — MERKEZ DİZİNİ</p>
+          <h1 id="hero-title">Üretim<br><em>burada</em> başlıyor<span class="hero-cursor" aria-hidden="true">_</span></h1>
+          <p class="hero-lede">Fikirleri küçük, odaklı dijital alanlara dönüştürüyorum. Aşağıdan canlı projelere geç veya sıradaki durağı takipte kal.</p>
+          <a class="primary-action" href="#projeler">
+            Projeleri keşfet
+            <span aria-hidden="true">↘</span>
+          </a>
+        </div>
+        <div class="hero-aside" aria-label="Dizin özeti">
+          <div class="hero-aside-line"></div>
+          <p>EREN YÜCE<br><span>BAĞIMSIZ ÜRETİCİ</span></p>
+          <p class="hero-aside-note">İnşa et<br>öğren<br>paylaş</p>
+        </div>
+      </section>
+
+      <section class="directory section-shell" id="projeler" aria-labelledby="directory-title">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">/ 01 — PROJE DİZİNİ</p>
+            <h2 id="directory-title">Açık alanlar<span class="accent-mark">.</span></h2>
+          </div>
+          <p class="section-intro">Her proje kendi ritmine sahip. Birini seç, içeri gir.</p>
+        </div>
+        <div class="project-list" id="project-list" aria-live="polite"></div>
+      </section>
+
+      <section class="manifesto section-shell" aria-labelledby="manifesto-title">
+        <div class="manifesto-mark" aria-hidden="true">✳</div>
+        <div>
+          <p class="section-kicker">/ 02 — ÇALIŞMA NOTU</p>
+          <h2 id="manifesto-title">İyi fikirler<br><span class="accent-text">yer ister.</span></h2>
+        </div>
+        <p class="manifesto-copy">Bu alan, tamamlanmış işlerin son durağı değil. Denemelerin, araçların ve henüz adını bulmamış fikirlerin ilk adresi.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer section-shell">
+      <p><span class="footer-pulse" aria-hidden="true">✦</span> Yeni bir şey hazırlanıyor.</p>
+      <p class="footer-meta">© <span id="current-year"></span> Eren Yüce / İstanbul</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
