@@ -1,11 +1,11 @@
 const projects = [
   {
-    title: "Katman Atölye",
-    description: "Katmanları ayır, fikri görünür kıl. Deneysel üretim alanı.",
-    url: "https://erenyuceexe.github.io/katman-atolye/",
-    category: "Deneysel üretim",
+    title: "Nesnehane",
+    description: "STL, OBJ ve diğer 3D modelleri baskıya hazırlayan, sipariş odaklı dijital atölye.",
+    url: "https://erenyuceexe.github.io/nesnehane/",
+    category: "3D baskı",
     status: "CANLI",
-    year: "2024",
+    year: "2026",
     available: true
   },
   {
