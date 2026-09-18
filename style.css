@@ -74,21 +74,31 @@ h1 em { color: var(--fuchsia); font-style: normal; }
 h2 { font-size: clamp(3rem, 7vw, 6rem); }
 .accent-mark, .accent-text { color: var(--fuchsia); }
 .section-intro { max-width: 17rem; margin: 0 0 .3rem; color: var(--muted); }
-.project-list { display: grid; grid-template-columns: repeat(2, 1fr); }
+.project-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0; }
 .project { display: grid; grid-template-columns: 1fr auto; gap: 1rem; min-height: 220px; padding: 2rem 0 2rem 1.2rem; border-bottom: 1px solid var(--line); text-decoration: none; transition: background .25s ease, transform .25s ease; }
 .project:nth-child(odd) { border-right: 1px solid var(--line); padding-right: 2rem; }
 .project:nth-child(even) { padding-left: 2rem; }
 .project:hover { background: linear-gradient(90deg, rgba(141,92,255,.1), transparent); transform: translateX(.35rem); }
+.project-body { display: grid; align-content: start; gap: .75rem; }
+.project-meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem; }
 .project-index { color: var(--fuchsia); font: .8rem "Courier New", monospace; }
-.project h3 { margin: .65rem 0 .7rem; font-size: 1.9rem; font-family: Georgia, serif; font-weight: 400; }
+.project-tag { color: var(--lime); font-size: .66rem; letter-spacing: .12em; text-transform: uppercase; }
+.project h3 { margin: 0; font-size: 1.9rem; font-family: Georgia, serif; font-weight: 400; }
 .project p { max-width: 29rem; margin: 0; color: var(--muted); }
+.project-note { display: inline-block; margin-top: .5rem; color: var(--muted); font-size: .72rem; letter-spacing: .09em; text-transform: uppercase; }
 .project-arrow { color: var(--lime); font-size: 1.6rem; }
 .project--soon { color: var(--muted); cursor: default; background: rgba(201,250,99,.03); }
 .project--soon .project-index { color: var(--lime); }
 .project--soon .project-arrow { color: var(--muted); }
-.manifesto { display: grid; grid-template-columns: 80px 1fr 1fr; gap: 2rem; align-items: start; padding-block: 7rem; border-top: 1px solid var(--line); }
+.about, .manifesto, .contact { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; padding-block: 7rem; border-top: 1px solid var(--line); }
+.about-copy, .contact-copy { display: grid; gap: 1.25rem; }
+.about-copy p, .contact-copy p, .manifesto-copy { margin: 0; color: var(--muted); font-size: 1.05rem; }
+.contact { align-items: center; }
+.contact-link { display: inline-flex; justify-self: end; align-items: center; padding: 1rem 1.5rem; background: var(--panel); border: 1px solid var(--line); color: var(--cream); text-decoration: none; font-weight: 700; letter-spacing: .08em; transition: transform .2s ease, border-color .2s ease; }
+.contact-link:hover { transform: translateY(-2px); border-color: rgba(201,250,99,.6); }
+.manifesto { grid-template-columns: 80px 1fr 1fr; }
 .manifesto-mark { color: var(--fuchsia); font-size: 3.2rem; line-height: 1; }
-.manifesto-copy { max-width: 28rem; margin: 2.4rem 0 0; color: var(--muted); font-size: 1.1rem; }
+.manifesto-copy { max-width: 28rem; margin: 2.4rem 0 0; }
 .site-footer { display: flex; justify-content: space-between; gap: 1rem; padding-block: 1.5rem 2.5rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .8rem; }
 .site-footer p { margin: 0; }
 .footer-pulse { margin-right: .5rem; }
@@ -108,7 +118,9 @@ h2 { font-size: clamp(3rem, 7vw, 6rem); }
   .project-list { display: block; }
   .project, .project:nth-child(odd), .project:nth-child(even) { min-height: 190px; padding: 1.7rem 0; border-right: 0; }
   .project:hover, .project:nth-child(even):hover { transform: translateX(.2rem); }
-  .manifesto { display: block; padding-block: 5rem; }
+  .about, .manifesto, .contact { display: block; padding-block: 5rem; }
+  .about-copy, .manifesto-copy { margin-top: 1.4rem; }
+  .contact-link { justify-self: start; margin-top: 1rem; }
   .manifesto-mark { margin-bottom: 2rem; }
   .manifesto-copy { margin-top: 2rem; }
   .site-footer { display: block; }
